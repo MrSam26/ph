@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/register.css">
+    <title>AskQuiZika - Регистрация</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-links">
+            <img src="favicon.jpg" alt="logo" class="logo">
+            <a class="button" href="#teachers">Преподаватели</a>
+            <a class="button" href="#topics">Темы</a>
+            <a class="button" href="#tasks">Задачи</a>
+        </div>
+        <div class="right-links" id="auth-buttons">
+            <a class="button" href="login.html" id="login-btn">Войти</a>
+            <a class="button" href="register.html" id="register-btn">Зарегистрироваться</a>
+        </div>
+        <div class="right-links" id="user-panel" style="display: none;">
+            <a class="button" href="lk.html">Личный кабинет</a>
+            <button class="button" id="logout-btn">Выйти</button>
+        </div>
+    </div>
+
+    <div class="field">
+        <div class="login-form">
+            <h2>Регистрация</h2>
+            <input class="input_field" type="text" id="login-auth" placeholder="Введите логин" required>
+            <input class="input_field" type="password" id="password-auth" placeholder="Введите пароль" required>
+
+            <label for="role-select">Выберите роль:</label>
+            <select id="role-select">
+                <option value="student">Студент</option>
+                <option value="teacher">Преподаватель</option>
+            </select>
+
+            <button onclick="register()">Зарегистрироваться</button>
+            <div id="register-message"></div>
+        </div>
+    </div>
+
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/register.js"></script>
+</body>
+</html>

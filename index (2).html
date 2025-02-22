@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-links">
+            <img src="favicon.jpg" alt="logo" class="logo">
+            <a class="button" href="#teachers">Преподаватели</a>
+            <a class="button" href="#topics">Темы</a>
+            <a class="button" href="#tasks">Задачи</a>
+        </div>
+        <div class="right-links">
+            <!-- Кнопки для неавторизованных пользователей -->
+            <div id="auth-buttons">
+                <a class="button" id="open-login" href="login.html">Войти</a>
+                <a class="button" id="open-register" href="register.html">Зарегистрироваться</a>
+            </div>
+            <div id="user-panel" style="display: none;">
+                <a class="button" id="profile-link" href="lk.html">Личный кабинет</a>
+                <a class="button" id="logout-btn" href="#">Выйти</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Блок для отображения информации о пользователе -->
+    <div id="user-info" style="margin: 20px; font-size: 18px;">Пользователь не авторизован</div>
+
+    <!-- Подключаем скрипты -->
+    <!-- Подключение index.js -->
+<script src="scripts/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/lk.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <!-- Навигационное меню -->
+    <div class="navbar">
+        <div class="left-links">
+            <img src="favicon.jpg" alt="logo" class="logo">
+            <a class="button" href="#teachers">Преподаватели</a>
+            <a class="button" href="#topics">Темы</a>
+            <a class="button" href="#tasks">Задачи</a>
+        </div>
+        <div class="right-links">
+            <a class="button" href="index.html">Главная</a>
+        </div>
+    </div>
+
+    <!-- Блок личного кабинета -->
+    <div class="field">
+        <div class="lk-container">
+            <h2>Личный кабинет</h2>
+            <p><strong>Логин:</strong> <span id="user-login">Загрузка...</span></p>
+            <p><strong>Роль:</strong> <span id="user-role">Загрузка...</span></p>
+            <button class="logout-button" id="logout-btn">Выйти</button>
+        </div>
+    </div>
+
+    <script src="scripts/lk.js"></script>
+    
+</body>
+</html>
